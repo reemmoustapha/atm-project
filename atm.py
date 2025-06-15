@@ -10,5 +10,8 @@ while choice != 4:
           4. exit
         """)
     choice = int(input("your choice: "))
+    if choice == 1:
+        print("your balance is: ")
     
+
     
