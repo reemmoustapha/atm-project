@@ -13,5 +13,12 @@ while choice != 4:
     if choice == 1:
         print("your balance is: ")
     
+    if choice == 2:
+        deposite = float(input("enter your deposite amount: "))
+        if deposite >0:
+            balance = balance + deposite
+            print(str(deposite) + "$" + "deposited. new balance is" + )
+        
+    
 
     
