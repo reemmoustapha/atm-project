@@ -13,14 +13,27 @@ while choice != 4:
     if choice == 1:
         print("your balance is: ")
     
-    if choice == 2:
-        deposite = float(input("enter your deposite amount: "))
-        if deposite >0:
-            balance = balance + deposite
-            print(str(deposite) + "$" + "deposited. new balance is" + str(balance) +"$")
+    elif choice == 2:
+        deposite_amount = float(input("enter your deposite amount: "))
+        if deposite_amount >0:
+            balance = balance + deposite_amount
+            print(str(deposite_amount) + "$" + "deposited. new balance is" + str(balance) +"$")
 
         else:
-           print("deposite must be positive")
+           print("deposite amount must be positive")
+        
+    elif choice == 3:
+        withdraw_amount = float(input("enter your withdraw amount: "))
+        if withdraw_amount < balance:
+           balance = balance - withdraw_amount
+           print(str(withdraw_amount) + "$" + "withdrawn. new balance is" + str(balance) +"$")
+        else:
+            print("invalid withdrawal amount")
+        
+    
+        
+
+
 
     
 
