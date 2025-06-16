@@ -17,7 +17,13 @@ while choice != 4:
         deposite = float(input("enter your deposite amount: "))
         if deposite >0:
             balance = balance + deposite
-            print(str(deposite) + "$" + "deposited. new balance is" + )
+            print(str(deposite) + "$" + "deposited. new balance is" + str(balance) +"$")
+
+        else:
+           print("deposite must be positive")
+
+    
+
         
     
 
