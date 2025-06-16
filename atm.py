@@ -29,6 +29,11 @@ while choice != 4:
            print(str(withdraw_amount) + "$" + "withdrawn. new balance is" + str(balance) +"$")
         else:
             print("invalid withdrawal amount")
+    
+    elif choice == 4:
+        print("thank you for using the ATM")
+
+    
         
     
         
