@@ -11,16 +11,16 @@ while choice != 4:
         """)
     choice = int(input("your choice: "))
     if choice == 1:
-        print("your balance is: ")
+        print("your balance is: " + str(balance) + "$")
     
     elif choice == 2:
-        deposite_amount = float(input("enter your deposite amount: "))
-        if deposite_amount >0:
-            balance = balance + deposite_amount
-            print(str(deposite_amount) + "$" + "deposited. new balance is" + str(balance) +"$")
+        deposit_amount = float(input("enter your deposit amount: "))
+        if deposit_amount >0:
+            balance = balance + deposit_amount
+            print(str(deposit_amount) + "$" + " deposited. new balance is " + str(balance) +"$")
 
         else:
-           print("deposite amount must be positive")
+           print("deposit amount must be positive")
         
     elif choice == 3:
         withdraw_amount = float(input("enter your withdraw amount: "))
